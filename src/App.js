@@ -15,7 +15,7 @@ import AboutPage from './Components/AboutPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/girja">
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/signup" element={<SignupPage />} />

@@ -1,21 +1,26 @@
 
 
 .App {
+  background-image: image-set('assets/applogo.png');
+  background-size:auto; /* Stretch to cover the entire screen */
+  margin: 0;
+  padding: 20px;
   font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   height: 100vh;
-  background-color: black;
+  background-color: white;
   align-self: center;
 
 }
 
 form {
+ 
   display: flex; /* Enables Flexbox */
   flex-direction: column; /* Stacks items vertically */
-  align-items: start; /* Horizontally centers items */
-  justify-content: start; /* Vertically centers items */
+  align-items: safe; /* Horizontally centers items */
+  justify-content: safe; /* Vertically centers items */
   gap: 15px; /* Adds spacing between items */
   background: white;
   padding: 20px;
@@ -32,16 +37,12 @@ h1 {
   font-size: 3ch;
 }
 
-div {
-  margin-bottom: 15px;
-  background-color: white;
-}
 
 label {
   display: block;
   justify-self: start;
+  margin-top: 15px;
   margin-bottom: 15px;
-
   font-weight: bold;
 }
 
@@ -149,18 +150,14 @@ color: black;
 .contact-container {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  padding: 20px auto ;
+  border: 2px red solid ;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
 }
 
-.contact-container h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
+
 
 .contact-form {
   display: flex;
@@ -173,25 +170,8 @@ color: black;
   flex-direction: column;
 }
 
-.form-group label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
-.form-group input,
-.form-group textarea {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
 
 .submit-button {
   padding: 10px;
@@ -365,4 +345,28 @@ color: black;
   width: 100%; /* Ensures the image fits the circle */
   height: auto; /* Maintains aspect ratio */
   object-fit:inherit /* Ensures the image covers the circle without distortion */
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light gray */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
