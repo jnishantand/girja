@@ -16,6 +16,7 @@ function Header() {
           <li><Link to="/service">Services</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/login">Login</Link></li>
+          <li><Link to="/portfilio" >Portfilio</Link></li>
         </ul>
       </nav>
     </header>

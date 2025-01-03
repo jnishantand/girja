@@ -6,11 +6,13 @@ import SignupPage from './Auth/SignupPage';
 import ResetPage from './Auth/ResetPage';
 import HomeScreen from './Screen/home';
 import Footer from './Components/Footer';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Components/portfolio'
 import Slider from './Components/Slider';
 import ContactPage from './Components/ContactPage';
 import ServicePage from './Components/ServicePage';
 import AboutPage from './Components/AboutPage';
+import Portfilio from './Components/portfolio';
 
 
 function App() {
@@ -24,8 +26,8 @@ function App() {
         <Route path='/contact' element={<ContactPage />}     />
         <Route path='/service' element={<ServicePage />}     />
         <Route path='/about' element={<AboutPage />}     />
-
-      </Routes>
+        <Route path='/portfilio' element={<Portfilio/>}/>
+     </Routes>
     </Router>
   );
 }

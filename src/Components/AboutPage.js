@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css'
 import logo from '../assets/girja.jpeg'
+
 const teamMembers = [
   {
     id: 1,

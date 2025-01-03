@@ -370,3 +370,51 @@ color: black;
     transform: rotate(360deg);
   }
 }
+
+.portfolio-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 200px;
+  object-fit:contain;
+}
+
+h3 {
+  margin: 10px 0;
+  color: #444;
+}
+
+p {
+  padding: 0 15px 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
