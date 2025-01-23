@@ -1,5 +1,6 @@
 // LoginPage.js
 import React, { useState } from 'react';
+import { TbSettingsStar } from 'react-icons/tb';
 
 
 
@@ -11,6 +12,12 @@ function LoginPage() {
       const [messgae,setMessage]=useState('');
       const [success,setSuccess]=useState('');
       const [reset,setReset]=useState('Reset');
+      const [visiblePassword,setVisibility]=useState(false);
+
+
+      const changeVisibility=()=>{
+        setVisibility(!visiblePassword);
+      };
 
   const navigate = useNavigate(); // React Router hook to navigate
 
@@ -52,16 +59,42 @@ navigate("/reset");
         <form onSubmit={handleLogin}>
 
         <div>
-     <label>LoginPage:</label>
+     <label><h2>Login</h2></label>
+     
         <div>
 
-        <label>Name</label>
+      <div>
+      <label>Name</label>
+      </div>
+
         <input required type="text" onChange={(e)=>setName(e.target.value)} placeholder="Enter your username" />
        
+
         </div>
 
-     <label>Password</label>
-     <input required placeholder='Password' type='password' onChange={(e)=>setPassword(e.target.value)} ></input>
+   <div>
+   <label>Password</label>
+   </div>
+      <div style={{position:'relative', display:'inline-block'}}> 
+
+      <input required placeholder='Password' type= {visiblePassword==true?'text' :'password'} onChange={(e)=>setPassword(e.target.value)} ></input>
+    <span
+     onClick={changeVisibility}
+   
+     style={{
+       position: 'absolute',
+       right: '10px',
+       top: '50%',
+       transform: 'translateY(-50%)',
+       cursor: 'pointer',
+       color: '#555',
+     }}
+    >
+       {visiblePassword ? '🙈' : '👁️'}
+    </span>
+      </div>
+
+
      </div>
         <button onClick={handleLogin}>Login</button>
 

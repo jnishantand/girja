@@ -134,12 +134,11 @@ color: black;
 .slider-container .slider-image {
 
   padding-top: 1%;
-  align-items: center; /* Center vertically */
-  justify-self: center;
-  width:1000px ; /* 80Adjust the width of each image to fit the container */
+  justify-self:stretch;
   height: 400px;
-  object-fit: cover; /* Optional: Adjusts how the image fits inside its container */
+  object-fit:cover; /* Optional: Adjusts how the image fits inside its container */
   border-radius: 10px; /* Optional: Adds rounded corners */
+  background-color: #e9e5e5;
 }
 
 
@@ -147,11 +146,13 @@ color: black;
   width: 100%;
   border-radius: 8px;
 }
+
 .contact-container {
   max-width: 600px;
   margin: 50px auto;
+
   padding: 20px auto ;
-  border: 2px red solid ;
+  border: 2px rgb(147, 198, 20) solid ;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
@@ -417,4 +418,9 @@ p {
   padding: 0 15px 15px;
   color: #666;
   font-size: 0.9rem;
+}
+.mainContent {
+  padding: 200px;
+  text-align: center;
+  background-color: #d65858;
 }
