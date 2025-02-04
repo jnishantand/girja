@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/girja/static/css/main.859465b2.css",
-    "main.js": "/girja/static/js/main.7807c994.js",
+    "main.js": "/girja/static/js/main.4a739b49.js",
     "static/js/488.2ee58421.chunk.js": "/girja/static/js/488.2ee58421.chunk.js",
+    "static/media/background.jpg": "/girja/static/media/background.133a003ffb4b5f6c3bd4.jpg",
     "static/media/girja.jpeg": "/girja/static/media/girja.bda84c03455c548b4e1a.jpeg",
     "static/media/applogo.png": "/girja/static/media/applogo.d78b34fdfcdd4d12fd41.png",
+    "static/media/logo.png": "/girja/static/media/logo.c0ae579c4170ed76882b.png",
     "static/media/slick.svg": "/girja/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/girja/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/girja/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/girja/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/girja/index.html",
     "main.859465b2.css.map": "/girja/static/css/main.859465b2.css.map",
-    "main.7807c994.js.map": "/girja/static/js/main.7807c994.js.map",
+    "main.4a739b49.js.map": "/girja/static/js/main.4a739b49.js.map",
     "488.2ee58421.chunk.js.map": "/girja/static/js/488.2ee58421.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.859465b2.css",
-    "static/js/main.7807c994.js"
+    "static/js/main.4a739b49.js"
   ]
 }
