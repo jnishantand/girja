@@ -13,7 +13,7 @@ import ContactPage from './Components/ContactPage';
 import ServicePage from './Components/ServicePage';
 import AboutPage from './Components/AboutPage';
 import Portfilio from './Components/portfolio';
-
+import RequirementsForm from './Components/requirement_form';
 
 function App() {
   return (
@@ -27,6 +27,8 @@ function App() {
         <Route path='/service' element={<ServicePage />}     />
         <Route path='/about' element={<AboutPage />}     />
         <Route path='/portfolio' element={<Portfilio/>}/>
+        <Route path='/form' element={<RequirementsForm/>}/>
+        
      </Routes>
     </Router>
   );
