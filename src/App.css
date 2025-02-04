@@ -424,3 +424,168 @@ p {
   text-align: center;
   background-color: #d65858;
 }
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Background Container */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+}
+
+/* Form Container */
+.bg-white {
+  background-color: white;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Drop shadow */
+}
+
+.p-6 {
+  padding: 1.5rem; /* Padding */
+}
+
+.w-full {
+  width: 100%; /* Full width */
+}
+
+.max-w-md {
+  max-width: 28rem; /* Limit the maximum width */
+}
+
+/* Header Section */
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem; /* Font size */
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-gray-800 {
+  color: #2d3748; /* Dark gray text */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* Smaller font size */
+}
+
+.text-gray-600 {
+  color: #718096; /* Lighter gray text */
+}
+
+/* Logo */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-16 {
+  width: 4rem; /* Set logo width */
+}
+
+.h-auto {
+  height: auto; /* Keep aspect ratio */
+}
+
+/* Form Styles */
+.space-y-3 > * + * {
+  margin-top: 0.75rem; /* Space between form elements */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.h-5 {
+  height: 1.25rem; /* Checkbox height */
+}
+
+.w-5 {
+  width: 1.25rem; /* Checkbox width */
+}
+
+.text-blue-500 {
+  color: #4299e1; /* Blue color */
+}
+
+.rounded {
+  border-radius: 0.25rem; /* Small rounded corners */
+}
+
+.focus\:ring-blue-400:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* Blue focus ring */
+}
+
+.ml-3 {
+  margin-left: 0.75rem; /* Space to the left */
+}
+
+.text-gray-700 {
+  color: #4a5568; /* Gray text */
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #3182ce; /* Darker blue on hover */
+}
+
+.transition {
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Footer Section */
+.text-gray-500 {
+  color: #a0aec0; /* Light gray */
+}
+
+.hover\:underline:hover {
+  text-decoration: underline; /* Underline on hover */
+}
